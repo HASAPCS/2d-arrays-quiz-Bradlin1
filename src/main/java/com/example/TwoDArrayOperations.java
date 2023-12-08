@@ -11,12 +11,36 @@ public class TwoDArrayOperations {
     // Exercise 2: Calculate the Average of All Elements in a 2D Array
     public static double calculateAverage(int[][] array) {
         // TODO: Implement the logic to calculate the average of all elements in the 2D array.
-        return 0.0; // Placeholder return value
+        double sum = 0;
+        int al = 0;
+        
+        for(int i =0;i<array.length;i++){
+            for(int j =0;j<array[i].length;j++){
+                sum=sum+array[i][j];
+                al++;
+                
+                
+            }
+
+        }
+        
+        return sum/al;
+    
     }
 
     // Exercise 3: Find the Minimum Value in a 2D Array
     public static int findMinimumValue(int[][] array) {
         // TODO: Implement the logic to find the minimum value in the 2D array.
-        return 0; // Placeholder return value
+        int min = array[0][0];
+        for(int i =0;i<array.length;i++){
+            for(int j =0;j<array[i].length;j++){
+                if(array[i][j]<min){
+                    min = array[i][j];
+                }
+               
+            }
+
+        }
+        return min; // Placeholder return value
     }
 }
